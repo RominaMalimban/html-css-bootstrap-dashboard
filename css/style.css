@@ -1,3 +1,35 @@
-.fa-bell{
-    color: #ff8f00;
+/* regole generali */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+ 
+
+/* regole nav bar */
+nav{
+    height: 70px;
+    width: 100vw;
+    /* debug */
+    background-color: coral;
+}
+
+/* regole main */
+main{
+    height: calc(100vh - 70px);
+    display: flex;
+}
+
+#aside{
+    width: 200px;
+    height: 100%;
+    /* debug */
+    background-color: cadetblue;
+}
+
+#main_section{
+    width: calc(100vw - 200px);
+    height: 100%;
+    /* debug */
+    background-color: crimson;
 }
