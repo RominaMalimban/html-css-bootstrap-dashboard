@@ -61,10 +61,7 @@ nav{
 }
 
 
-
-
-
-/* regole main */
+/* regole main - sezione laterale */
 main{
     height: calc(100vh - 70px);
     display: flex;
@@ -82,20 +79,13 @@ main{
     background-color: #051e34;
 }
 
-#main_section{
-    width: calc(100vw - 120px);
-    height: 100%;
-    /* debug */
-    background-color: crimson;
-}
-
 .aside_list a, .aside_list i{
     color: #fff;
 }
 
 .aside_list{
     display: flex;
-    margin-bottom: 15px;
+    margin-bottom: 20px;
 }
 
 .fa-chart-simple{
@@ -105,6 +95,37 @@ main{
     margin-left: 10px;
 }
 
+/* regole main - sezione principale */
+
+
+#main_section{
+    width: calc(100vw - 120px);
+    height: 100%;
+    overflow-y: auto;
+    color: #fff;
+    /* debug */
+    background-color: crimson;
+}
+
+.top_main{
+    background-color: #1b72e8;
+    height: 100px;
+}
+
+.top_main h1{
+    display: inline-block;
+}
+
+.top_main a{
+    color: #fff;
+}
+
+.btn_top{
+    padding: 5px 10px;
+    border: 1px solid #165bba;
+    background-color: #165bba;
+    border-radius: 15px;
+}
 
 
 
