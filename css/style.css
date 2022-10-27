@@ -5,6 +5,10 @@
     box-sizing: border-box;
 }
 
+body{
+    max-width: 100%;
+   
+}
 
 /* regole nav bar */
 nav{
@@ -30,6 +34,15 @@ nav{
     margin: 0 10px;
 }
 
+.icons{
+    width: 10vw;
+    display: flex;
+}
+
+.md_none{
+    display: flex;
+   
+}
 .md_none i{
     padding: 0 5px;
 }
@@ -38,15 +51,22 @@ nav{
     padding-left: 5px;
     color: #ff8e00;
 }
+
+
+
+
+
 /* regole main */
 main{
     height: calc(100vh - 70px);
     display: flex;
+    max-width: 100%;
 }
 
 #aside{
     width: 200px;
     height: 100%;
+   
     /* debug */
     background-color: cadetblue;
 }
@@ -54,6 +74,7 @@ main{
 #main_section{
     width: calc(100vw - 200px);
     height: 100%;
+    
     /* debug */
     background-color: crimson;
 }
@@ -71,3 +92,8 @@ main{
 
 /******************* RESPONSIVE ***********************/
 
+@media screen and (max-width:991px){
+    .md_none{
+        display: none;
+    }
+}
