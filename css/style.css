@@ -5,7 +5,13 @@
     box-sizing: border-box;
 }
 
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
 
+a{
+    text-decoration: none;
+}
 
 /* regole nav bar */
 nav{
@@ -13,7 +19,7 @@ nav{
     width: 100vw;
     display: flex;
     align-items: center;
-    padding: 0 10px;
+    padding: 0 20px;
 }
 
 #logo_lg img{
@@ -66,24 +72,38 @@ main{
 }
 
 #aside{
-    width: 200px;
+    width: 120px;
     height: 100%;
-   
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     /* debug */
-    background-color: cadetblue;
+    background-color: #051e34;
 }
 
 #main_section{
-    width: calc(100vw - 200px);
+    width: calc(100vw - 120px);
     height: 100%;
-    
     /* debug */
     background-color: crimson;
 }
 
+.aside_list a, .aside_list i{
+    color: #fff;
+}
 
+.aside_list{
+    display: flex;
+    margin-bottom: 15px;
+}
 
-
+.fa-chart-simple{
+    padding-left: 5px;
+}
+.txt_none{
+    margin-left: 10px;
+}
 
 
 
@@ -95,6 +115,7 @@ main{
 /******************* RESPONSIVE ***********************/
 
 @media screen and (max-width:991px){
+    /* nav bar */
     #logo_lg img{
         display: none;
     }
@@ -107,4 +128,17 @@ main{
         display: none;
     }
 
+    /* sezione laterale */
+    #aside{
+        width: 60px;
+    }
+    
+    #main_section{
+        width: calc(100vw - 60px);
+    }
+
+    .txt_none{
+        display: none;
+        margin-left: 0;
+    }
 }
