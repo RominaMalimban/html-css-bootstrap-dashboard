@@ -109,7 +109,18 @@ main{
 
 .top_main{
     background-color: #1b72e8;
-    height: 100px;
+    height: 120px;
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
+}
+
+.top_main_sx{
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
 }
 
 .top_main h1{
@@ -120,6 +131,10 @@ main{
     color: #fff;
 }
 
+.top_main div:first-child{
+    padding-bottom: 20px;
+}
+
 .btn_top{
     padding: 5px 10px;
     border: 1px solid #165bba;
@@ -127,8 +142,13 @@ main{
     border-radius: 15px;
 }
 
+.top_main_dx{
+    width: 30%;
+}
 
-
+.top_main_dx span{
+    font-size: 30px;
+}
 
 
 
