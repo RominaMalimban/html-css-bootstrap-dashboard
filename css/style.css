@@ -76,7 +76,6 @@ nav{
     color: #000;
 }
 
-
 /* regole main - sezione laterale */
 main{
     height: calc(100vh - 70px);
@@ -348,7 +347,7 @@ main{
     border-radius: 3px;
     left:auto;
     right:0;
-    margin-right: 25px;
+    margin: 10px 25px 0 0 ;
 }
 
 .sub_menu li:hover{
