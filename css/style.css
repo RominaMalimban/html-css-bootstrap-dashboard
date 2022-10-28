@@ -64,19 +64,6 @@ nav{
     color: #ff8e00;
 }
 
-.sub_menu{
-    /* display: none; */
-    /* text-align: right; */
-}
-
-.hover_bell:hover .sub_menu{
-    display: block;
-    position: absolute;
-    background-color: #fff;
-    right: 0;
-    left: 4px;
-}
-
 
 /* regole main - sezione laterale */
 main{
@@ -88,7 +75,7 @@ main{
 #aside{
     width: 120px;
     height: 100%;
-    padding: 20px 20px 0 20px;
+    padding-top: 20px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -101,7 +88,7 @@ main{
 
 .aside_list{
     display: flex;
-    margin-bottom: 20px;
+    padding: 10px 20px;
 }
 
 .fa-chart-simple{
@@ -212,10 +199,16 @@ main{
     border-radius: 10px;
 }
 
-.container_box {
-    padding: 10px 30px;
+.container_box ul, .faq_question{
+    padding: 10px 0;
+    margin: 0 20px;
 }
 
+.container_box p{
+    padding: 10px 0;
+    margin: 0 20px;
+    display: none;
+}
 .data{
     display: flex;
     align-items: center;
@@ -276,6 +269,12 @@ main{
     align-items: center;
 }
 
+.hover_faq{
+    display: none;
+    padding: 10px 0;
+    margin: 0 20px;
+}
+
 .data_dx .title_box{
     background-color: #f7f7f7;
     border-bottom: 1px solid #d4d4d4;
@@ -327,6 +326,26 @@ main{
     padding: 10px 20px;
 }
 
+
+/**********************HOVER****************************/
+
+#aside .aside_list:hover{
+    background-color: rgba(177, 177, 177, 0.244);
+}
+
+.container_box ul:hover,
+.container_box .faq_question:hover{
+    background-color: rgba(177, 177, 177, 0.244);
+}
+
+.fa-pen:hover, .fa-trash:hover{
+    background-color: #6c757d;
+    color: #fff;
+}
+
+#faq .container_box:hover p{
+    display: block;
+}
 
 /******************* RESPONSIVE ***********************/
 
