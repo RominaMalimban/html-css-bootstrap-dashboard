@@ -333,6 +333,10 @@ main{
     background-color: rgba(177, 177, 177, 0.244);
 }
 
+.top_main .btn_top:hover{
+    background-color: #134c9b;
+}
+
 .container_box ul:hover{
     background-color: rgba(177, 177, 177, 0.244);
 }
