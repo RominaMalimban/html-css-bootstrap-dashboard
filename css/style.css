@@ -64,6 +64,18 @@ nav{
     color: #ff8e00;
 }
 
+.sub_menu{
+    display: none;
+}
+
+.sub_menu li{
+    padding: 10px;
+}
+
+.sub_menu a{
+    color: #000;
+}
+
 
 /* regole main - sezione laterale */
 main{
@@ -328,6 +340,21 @@ main{
 
 
 /**********************HOVER****************************/
+
+.bell-hover:hover .sub_menu{
+    position: absolute;
+    display: block;
+    background-color: #fff;
+    border-radius: 3px;
+    left:auto;
+    right:0;
+    margin-right: 25px;
+}
+
+.sub_menu li:hover{
+    background-color: rgba(177, 177, 177, 0.244) ;
+}
+
 
 #aside .aside_list:hover{
     background-color: rgba(177, 177, 177, 0.244);
