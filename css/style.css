@@ -333,8 +333,7 @@ main{
     background-color: rgba(177, 177, 177, 0.244);
 }
 
-.container_box ul:hover,
-.container_box .faq_question:hover{
+.container_box ul:hover{
     background-color: rgba(177, 177, 177, 0.244);
 }
 
@@ -343,10 +342,23 @@ main{
     color: #fff;
 }
 
+.title_box .fa-plus:hover{
+    color: #fff;
+    background-color: #3e8afb;
+}
+
+.container_box .faq_question:hover{
+    border: 2px solid #3e8afb;
+    background-color: #89afe8;
+}
+
 #faq .container_box:hover p{
     display: block;
 }
 
+.description_stats a:hover{
+    text-decoration: none;
+}
 /******************* RESPONSIVE ***********************/
 
 @media screen and (max-width:991px){
